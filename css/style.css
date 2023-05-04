@@ -64,14 +64,14 @@ main {
     width: 41.16667%;
 }
 
-.nav_ul {
+.nav__inner {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding-inline-start: 0;
 }
 
-.nav_li {
+.nav__item {
     padding: 0px;
     list-style: none;
 } 
@@ -255,6 +255,7 @@ main {
 
 .steps__item {
     text-align: center;
+    position: relative;
 }    
 
 .steps__icon {
@@ -275,6 +276,20 @@ main {
     color: #0D606F;
 } 
 
+.steps__link {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.steps__item:hover .steps__icon {
+    transform: scale(1.1);
+    opacity: 0.85;
+    transition: all 0.1s linear;
+}
+
 /* =====Steps end===== */
 
 
@@ -291,25 +306,24 @@ main {
 .destinations__country {
     display: flex;
     overflow: hidden;
+    margin-bottom: 24px;
+    max-width: 1440px;
+    gap: 60px;
 }
 
 .destinations__item {
     position: relative;
     padding: 0;
-    margin-right: 60px;
+    margin: 0;
 }
 
 .destinations__item:first-of-type {
     margin-left: -540px;
 }
 
-.destinations__item:last-of-type {
-    margin-right: 0px;
-}
-
 .destinations__item__image {
     border-radius: 16px;
-    margin-bottom: 24px;
+    object-fit: cover;
 }
 
 .destinations__item__title {
@@ -367,6 +381,11 @@ main {
 .stories__image {
     filter: drop-shadow(0px 4px 4px #0D606F);
     border-radius: 16px;
+}
+
+.stories__image:hover {
+    transform: scale(1.05);
+    transition: all 0.1s linear;
 }
 
 .stories__description {
