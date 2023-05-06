@@ -26,18 +26,30 @@
                                 <img class="header__logo__name" src="images/Travel_Portal.png" alt="Travel Portal">
                             </div>
 
-                            <nav class="nav">
-                                <ul class="nav__inner">
-                                    <li class="nav__item"><a class="nav__link" href="#prewiew">How It Works</a></li>
-                                    <li class="nav__item"><a class="nav__link" href="#steps">Plan Your Trip</a></li>
-                                    <li class="nav__item"><a class="nav__link" href="#destinations">Destinations</a></li>
-                                    <li class="nav__item"><a class="nav__link" href="#stories">Travel Stories</a></li>
+                            <nav class="header__nav">
+                                <ul class="header__nav__inner">
+                                    <li class="header__nav__item"><a class="header__nav__link" href="#prewiew">How It Works</a></li>
+                                    <li class="header__nav__item"><a class="header__nav__link" href="#steps">Plan Your Trip</a></li>
+                                    <li class="header__nav__item"><a class="header__nav__link" href="#destinations">Destinations</a></li>
+                                    <li class="header__nav__item"><a class="header__nav__link" href="#stories">Travel Stories</a></li>
+                                    <li class="header__nav__item header__nav__item-hint"><a class="header__nav__link" href="#!">Account</a></li>
+                                    <li class="header__nav__item header__nav__item-hint" ><a class="header__nav__link" href="#!">Social Media</a></li>
                                 </ul>
+                                <div class="header__nav__close">
+                                    <span class="header__nav__close__line"></span>
+                                    <span class="header__nav__close__line"></span>
+                                </div>
                             </nav>
 
                             <button class="button__login button--color button--short">
                                 Login
                             </button>
+
+                            <div class="burger__menu">
+                                <span class="burger__menu__line"></span>
+                                <span class="burger__menu__line"></span>
+                                <span class="burger__menu__line"></span>
+                            </div>
                         </div>
                     </div>
                 </header>
@@ -107,29 +119,32 @@
                 <h2 class="title destinations__title">
                     POPULAR DESTINATIONS
                 </h2>
-                <div class="destinations__country">
-                    <figure class="destinations__item">
-                        <img class="destinations__item__image" src="images/destinations/destination_spain.jpg" alt="Spain">
-                        <figcaption class="destinations__item__title">
-                            Spain
-                        </figcaption>   
-                    </figure> 
-                    
-                    <figure class="destinations__item">
-                        <img class="destinations__item__image" src="images/destinations/destination_japan.jpg" alt="Japan">
-                        <figcaption class="destinations__item__title">
-                            Japan
-                        </figcaption>  
-                    </figure>  
-                    
-                    <figure class="destinations__item">    
-                        <img class="destinations__item__image" src="images/destinations/destination_usa.jpg" alt="USA">
-                        <figcaption class="destinations__item__title">
-                            USA
-                        </figcaption>  
-                    </figure>
-                </div>
 
+                <div class="destinations__slider">
+                    <div class="destinations__container">
+                        <figure class="destinations__item">
+                            <img class="destinations__item__image" src="images/destinations/destination_spain.jpg" alt="Spain">
+                            <figcaption class="destinations__item__title">
+                                Spain
+                            </figcaption>   
+                        </figure>
+                                                
+                        <figure class="destinations__item">
+                            <img class="destinations__item__image" src="images/destinations/destination_japan.jpg" alt="Japan">
+                            <figcaption class="destinations__item__title">
+                                Japan
+                            </figcaption>  
+                        </figure>  
+                                                
+                        <figure class="destinations__item">    
+                            <img class="destinations__item__image" src="images/destinations/destination_usa.jpg" alt="USA">
+                            <figcaption class="destinations__item__title">
+                                USA
+                            </figcaption>  
+                        </figure>
+                    </div>
+                </div>
+             
                 <div class="destinations__circles">
                     <img src="images/destinations/circle_1.svg" alt="cirkle 1">
                     <img src="images/destinations/circle_2.svg" alt="cirkle 2">
@@ -260,5 +275,7 @@
 
         </main>
         <!-- /Main -->
+
+        <script src="js/index.js"></script>
     </body>
 </html>
