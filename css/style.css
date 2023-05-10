@@ -248,7 +248,7 @@ main {
     display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
-    width: 98%;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -259,6 +259,8 @@ main {
 
 .steps__icon {
     background-color: #F2785C;
+    width: 100px;
+    height: 100px;
     border-radius: 16px;
     padding: 28px 25px;
     margin-bottom: 30px;
@@ -303,9 +305,10 @@ main {
 }
 
 .destinations__slider {
+    position: relative;
     width: 100%;
-    overflow: hidden; 
     margin-bottom: 24px;
+    overflow: hidden; 
 }
 
 .destinations__container {
@@ -318,13 +321,18 @@ main {
 }
 
 .destinations__item {
+    width: 55.55555%;
+    height: auto;
     position: relative;
     padding: 0;
-    margin: 0 auto;
+    margin: 0;
+    flex-shrink: 0;
 }
 
 
 .destinations__item__image {
+    width: 100%; 
+    height: 100%; 
     border-radius: 16px;
     object-fit: cover;
 }
@@ -383,6 +391,9 @@ main {
 
 .stories__image {
     filter: drop-shadow(0px 4px 4px #0D606F);
+    width: 33.333%;
+    min-height: 130px;
+    object-fit: cover;
     border-radius: 16px;
 }
 
@@ -485,6 +496,10 @@ main {
 }
 
 @media (max-width: 1090px) {
+    .background_top {
+        height: 701px;
+    }
+
     .preview__title {
         font-size: 70px;
     }
@@ -492,10 +507,228 @@ main {
     .preview__subtitle {
         font-size: 18px;
     }
+
 }
 
 @media (max-width: 991px) {
     .background_top {
+        height: 637px;
+    }
+
+    .header__logo__name {
+        display: none;
+    }
+
+    .preview__title {
+        font-size: 63px;
+    }
+
+    .preview__subtitle {
+        font-size: 15px;
+    }
+
+    .stories__description {
+        padding-left: 20px;
+    }
+
+    .stories__description__title {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 1.2;
+        margin-bottom: 12px;
+    }
+
+    .stories__description__text {
+        font-size: 18px;
+    }
+
+    .stories__description__link {
+        font-size: 18px;
+    }
+   
+}
+
+@media (max-width: 870px) {
+    .background_top {
+        height: 560px;
+        margin-bottom: 40px;
+    }
+
+    .preview__title {
+        font-size: 55px;
+    }
+
+    .preview__subtitle {
+        display: none;
+    }
+
+    .preview__search {
+        padding: 9px 9px 9px 16px;
+    }
+
+    .preview__search__input {
+        font-size: 20px;
+        line-height: 1.2;
+    }
+
+    .button__preview {
+        font-size: 20px;
+        line-height: 1.2;
+    }
+
+    .button--long {
+        padding: 7.5px 9px;
+    }
+
+    .steps {
+        margin-bottom: 50px;
+    }
+
+    .steps__text {
+        font-size: 16px;
+    }
+
+    .destinations {
+        margin-bottom: 133px;
+    }
+
+}
+
+@media (max-width: 767px) {
+    .background_top {
+        height: 494px;
+    }
+
+    .header__nav__inner {
+        gap: 20px;
+    }
+
+    .button__login {
+        display: none;
+    }
+
+    .preview__inner {
+        max-width: 100%;
+    }
+
+    .title {
+        font-size: 30px;
+    }
+
+    .stories__description {
+        padding-left: 10px;
+    }
+
+    .stories__inner {
+        margin-bottom: 15px;
+    }
+
+    .stories__description__title {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.2;
+        margin-bottom: 12px;
+    }
+
+    .stories__description__text {
+        font-size: 15px;
+        line-height: 1.2;
+    }
+
+    .stories__description__link {
+        font-size: 15px;
+    }
+
+    .steps__icon {
+        width: 70px;
+        height: 70px;
+    }
+
+}
+
+@media (max-width: 570px) {
+    .background_top {
+        height: 368px;
+    }
+
+    .header {
+        margin-bottom: 67px;
+    }
+
+    .header__inner {
+        height: 60px;
+    }
+
+    .header__nav {
+        font-size: 14px;
+    }
+
+    .preview__title {
+        display: none;
+    }
+
+    .preview__search__input {
+        font-size: 16px;
+        line-height: 1.2;
+    }
+
+    .button__preview {
+        font-size: 18px;
+        line-height: 1.2;
+    }
+
+    .stories__container {
+        padding: 10px 0;
+    }
+
+    .stories__description__title {
+        font-size: 11px;
+        line-height: 13px;
+        margin-bottom: 10px;
+    }
+
+    .stories__description__text {
+        font-size: 9px;
+        line-height: 10.8px;
+    }
+
+    .stories__description__link {
+        font-size: 9px;
+        line-height: 10.8px;
+    }
+
+    .footer__copyright {
+        display: none;
+    }
+
+    .footer__social {
+        width: 100%;
+        gap: 24px;
+        padding: 21px 0;
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 440px) {
+    .background_top {
+        height: 283px;
+    }
+
+    .preview__search__input {
+        font-size: 14px;
+        line-height: 1.2;
+    }
+
+    .button__preview {
+        font-size: 11px;
+        line-height: 15px;
+    }
+}
+
+@media (max-width: 390px) {
+    .background_top {
+        height: 251px;
         background: linear-gradient(180deg, #0D606F 0%, rgba(13, 96, 111, 0) 25.1%), url(../images/Travel_background.jpg) no-repeat center;
     }
 
@@ -588,89 +821,6 @@ main {
         display: flex;
     }
 
-
-    .preview__title {
-        font-size: 63px;
-    }
-
-    .preview__subtitle {
-        font-size: 15px;
-    }
-
-   
-}
-
-@media (max-width: 870px) {
-    .preview__title {
-        font-size: 55px;
-    }
-
-    .preview__subtitle {
-        display: none;
-    }
-
-    .preview__search {
-        padding: 9px 9px 9px 16px;
-    }
-
-    .preview__search__input {
-        font-size: 20px;
-        line-height: 1.2;
-    }
-
-    .button__preview {
-        font-size: 20px;
-        line-height: 1.2;
-    }
-
-    .button--long {
-        padding: 7.5px 9px;
-    }
-}
-
-@media (max-width: 767px) {
-    .preview__inner {
-        max-width: 100%;
-    }
-}
-
-@media (max-width: 570px) {
-    .header {
-        margin-bottom: 67px;
-    }
-
-    .preview__title {
-        display: none;
-    }
-
-    .preview__search__input {
-        font-size: 16px;
-        line-height: 1.2;
-    }
-
-    .button__preview {
-        font-size: 18px;
-        line-height: 1.2;
-    }
-}
-
-@media (max-width: 440px) {
-    .preview__search__input {
-        font-size: 14px;
-        line-height: 1.2;
-    }
-
-    .button__preview {
-        font-size: 11px;
-        line-height: 15px;
-    }
-}
-
-@media (max-width: 390px) {
-    .background_top {
-    background: url(../images/mobile/background-mobile.jpg) no-repeat center;
-       margin-bottom: 80px;
-    }
 }
 
 /* =====Media end===== */
