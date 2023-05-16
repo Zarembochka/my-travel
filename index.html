@@ -19,7 +19,7 @@
             <div class="background_top">
                 <!-- Header -->
                 <header class="header">
-                    <div class="container">
+                    <div class="container-full">
                         <div class="header__inner">
                             <div class="header__logo">
                                 <img class="header__logo__ico" src="images/logo-ico.svg" alt="Travel Portal ico">
@@ -57,7 +57,7 @@
 
                 <!-- Preview -->
                 <section class="prewiew" id="prewiew">
-                    <div class="container">
+                    <div class="container-full">
                         <div class="preview__inner">
                             <h1 class="preview__title">
                                 Explore the beauty of the World
@@ -68,7 +68,7 @@
                             <form class="preview__search">
                                 <input type="text" name="User_like_to_do" class="preview__search__input" placeholder="What would you like to do?">
                         
-                                <button type="submit" class="button__preview button--color button--long button--text">
+                                <button type="submit" class="button__preview button--color button--text">
                                     Start Planning
                                 </button>
                             </form>
@@ -87,11 +87,11 @@
                     </h2>
                     <div class="steps__inner">
                         <div class="steps__item">
-                            <img class="steps__icon" src="images/Steps/steps_01.svg" alt="">
+                            <img class="steps__icon steps__icon-first" src="images/Steps/steps_01.svg" alt="">
                             <p class="steps__text">
                                 Tell us what you want to do
                             </p>
-                            <a href="#!" class="steps__link"></a>
+                            <!-- <a href="#!" class="steps__link"></a> -->
                         </div>
                         
                         <div class="steps__item">
@@ -99,15 +99,15 @@
                             <p class="steps__text">
                                 Share us preferable dates
                             </p>
-                            <a href="#!" class="steps__link"></a>
+                            <!-- <a href="#!" class="steps__link"></a> -->
                         </div>
 
                         <div class="steps__item">
-                            <img class="steps__icon" src="images/Steps/steps_03.svg" alt="">
+                            <img class="steps__icon steps__icon-last" src="images/Steps/steps_03.svg" alt="">
                             <p class="steps__text">
                                 We will give you recommendations
                             </p>
-                            <a href="#!" class="steps__link"></a>
+                            <!-- <a href="#!" class="steps__link"></a> -->
                         </div>
                     </div>
                 </div>
@@ -119,7 +119,7 @@
                 <h2 class="title destinations__title">
                     POPULAR DESTINATIONS
                 </h2>
-
+                             
                 <div class="destinations__slider">
                     <div class="destinations__container">
                         <figure class="destinations__item">
@@ -142,18 +142,29 @@
                                 USA
                             </figcaption>  
                         </figure>
+
+                        <div class="destinations__arrow destinations__arrow-left">
+                            <img class="destinations__arrow__image" src="images/mobile/arrows/arrow-left.svg" alt="arrow left">
+                        </div>
+    
+                        <div class="destinations__arrow destinations__arrow-right">
+                            <img class="destinations__arrow__image" src="images/mobile/arrows/arrow-right.svg" alt="arrow right">
+                        </div>
+                    </div>
+
+                             
+                    <div class="destinations__circles">
+                        <img class="destinations__circles__image" src="images/destinations/circle_1.svg" alt="cirkle 1">
+                        <img class="destinations__circles__image" src="images/destinations/circle_2.svg" alt="cirkle 2">
+                        <img class="destinations__circles__image" src="images/destinations/circle_3.svg" alt="cirkle 3">
                     </div>
                 </div>
-             
-                <div class="destinations__circles">
-                    <img src="images/destinations/circle_1.svg" alt="cirkle 1">
-                    <img src="images/destinations/circle_2.svg" alt="cirkle 2">
-                    <img src="images/destinations/circle_3.svg" alt="cirkle 3">
+                               
+                <div class="container">
+                    <button class="button__destinations button--color button--text">
+                        Find More
+                    </button>
                 </div>
-                
-                <button class="button__destinations button--color button--text">
-                    Find More
-                </button>
             </section>
             <!-- /Destinations -->
 
@@ -166,7 +177,7 @@
                         TRAVEL STORIES
                     </h2>
                     <div class="stories__container">
-                        <div class="container">
+                        <div class="container-full">
                             <!-- Stories 1 -->
                             <div class="stories__inner">
                                     <img class="stories__image" src="images/stories/stories_1.jpg" alt="10 Photos of Attractive Thailand">
@@ -244,8 +255,11 @@
 
                 <!-- Footer -->
                 <footer class="footer">
-                    <div class="container">
+                    <div class="container-full">
                         <div class="footer__container">
+                            <div class="footer__rsschool">
+                                
+                            </div>
                             <h4 class="footer__copyright">
                                 All Rights Reserved &copy; Travel Portal
                             </h4>

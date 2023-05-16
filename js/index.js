@@ -6,8 +6,10 @@
     const menuCloseItem = document.querySelector('.header__nav__close');
     burgerItem.addEventListener('click', () => {
         menu.classList.add('header__nav__active');
+        console.log(burgerItem);
     });
     menuCloseItem.addEventListener('click', () => {
         menu.classList.remove('header__nav__active');
     });
+    console.log(burgerItem);
 }())
